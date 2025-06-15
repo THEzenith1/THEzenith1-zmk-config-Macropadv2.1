@@ -1,0 +1,6 @@
+if SHIELD_MACROPADV2
+
+config ZMK_KEYBOARD_NAME
+    defualt "MacropadV2.1"
+
+endif

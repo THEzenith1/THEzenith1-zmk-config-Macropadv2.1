@@ -1,0 +1,2 @@
+config SHIELD_MACROPADV2.1
+    def_bool $(shields_list_contains, MacropadV2.1)
