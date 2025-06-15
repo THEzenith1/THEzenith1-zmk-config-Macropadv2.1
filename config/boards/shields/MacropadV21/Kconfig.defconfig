@@ -1,6 +1,6 @@
 if SHIELD_MACROPADV21
 
 config ZMK_KEYBOARD_NAME
-    defualt "MacropadV21"
+    default "MacropadV21"
 
 endif
