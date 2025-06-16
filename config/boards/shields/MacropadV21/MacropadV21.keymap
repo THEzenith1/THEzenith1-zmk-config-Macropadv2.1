@@ -8,17 +8,17 @@
         default_layer {
             display-name = "base";
             bindings = <
-                &kp A    // key 0 (GPIO0 pin 2)
-                &kp B    // key 1 (GPIO0 pin 3)
-                &kp C    // key 2 (GPIO0 pin 4)
-                &kp D    // key 3 (GPIO0 pin 5)
-                &kp E    // key 4 (GPIO0 pin 2)
-                &kp F    // key 5 (GPIO0 pin 3)
-                &kp G    // key 6 (GPIO0 pin 4)
-                &kp H    // key 7 (GPIO0 pin 5)
-                &kp I    // key 8 (GPIO0 pin 2)
-                &kp J    // key 9 (GPIO0 pin 3)
-                &kp K    // key 9 (GPIO0 pin 3)
+                &kp 1    // key 0 (GPIO0 pin 2)
+                &kp 2    // key 1 (GPIO0 pin 3)
+                &kp 3    // key 2 (GPIO0 pin 4)
+                &kp 4    // key 3 (GPIO0 pin 5)
+                &kp 5    // key 4 (GPIO0 pin 2)
+                &kp 6    // key 5 (GPIO0 pin 3)
+                &kp 7    // key 6 (GPIO0 pin 4)
+                &kp 8    // key 7 (GPIO0 pin 5)
+                &kp 9    // key 8 (GPIO0 pin 2)
+                &kp A    // key 9 (GPIO0 pin 3)
+                &kp B    // key 9 (GPIO0 pin 3)
 
             >;
         };
