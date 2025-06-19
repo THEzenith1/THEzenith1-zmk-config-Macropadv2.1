@@ -8,17 +8,17 @@
         default_layer {
             display-name = "base";
             bindings = <
-                &kp N1    // key 0 (GPIO0 pin 2)
-                &kp N2    // key 1 (GPIO0 pin 3)
-                &kp N3   // key 2 (GPIO0 pin 4)
-                &kp N4   // key 3 (GPIO0 pin 5)
-                &kp N5   // key 4 (GPIO0 pin 2)
-                &kp N6   // key 5 (GPIO0 pin 3)
-                &kp N7   // key 6 (GPIO0 pin 4)
-                &kp N8   // key 7 (GPIO0 pin 5)
-                &kp N9    // key 8 (GPIO0 pin 2)
-                &kp N0   // key 9 (GPIO0 pin 3)
-                &kp A    // key 9 (GPIO0 pin 3)
+                &studio_unlock    // key 0 (GPIO0 pin 2)
+                &studio_unlock    // key 1 (GPIO0 pin 3)
+                &studio_unlock   // key 2 (GPIO0 pin 4)
+                &studio_unlock   // key 3 (GPIO0 pin 5)
+                &studio_unlock   // key 4 (GPIO0 pin 2)
+                &studio_unlock   // key 5 (GPIO0 pin 3)
+                &studio_unlock   // key 6 (GPIO0 pin 4)
+                &studio_unlock   // key 7 (GPIO0 pin 5)
+                &studio_unlock    // key 8 (GPIO0 pin 2)
+                &studio_unlock   // key 9 (GPIO0 pin 3)
+                &studio_unlock    // key 9 (GPIO0 pin 3)
 
             >;
         };
