@@ -4,9 +4,7 @@
     macropad_physical_layout: macropad_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Macro Pad";
-        transform = <&matrix_transform0>;
-
-        keys  //                     w   h    x    y     rot    rx    ry
+        keys  //                    w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100  400    0       0     0     0>
             , <&key_physical_attrs 100 100  500    0       0     0     0>
             , <&key_physical_attrs 100 100  600    0       0     0     0>
@@ -19,16 +17,5 @@
             , <&key_physical_attrs 100 100  600  200       0     0     0>
             , <&key_physical_attrs 100 100  700  200       0     0     0>
             ;
-    };
-
-    position_map {
-        compatible = "zmk,physical-layout-position-map";
-
-        complete;
-
-        macropad_physical_layout {
-            physical-layout = <&macropad_physical_layout>;
-            positions = <>;
-        };
     };
 };
