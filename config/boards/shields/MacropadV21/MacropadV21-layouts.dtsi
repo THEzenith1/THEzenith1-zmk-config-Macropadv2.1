@@ -1,21 +1,32 @@
 #include <physical_layouts.dtsi>
+#include <physical_layouts.dtsi>
 
-/ {
+&{
     macropad_physical_layout: macropad_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Macro Pad";
-        keys  //                    w   h    x    y     rot    rx    ry
-            = <&key_physical_attrs 100 100  400    0       0     0     0>
-            , <&key_physical_attrs 100 100  500    0       0     0     0>
-            , <&key_physical_attrs 100 100  600    0       0     0     0>
-            , <&key_physical_attrs 100 100  400  100       0     0     0>
-            , <&key_physical_attrs 100 100  500  100       0     0     0>
-            , <&key_physical_attrs 100 100  600  100       0     0     0>
-            , <&key_physical_attrs 100 100  700  100       0     0     0>
-            , <&key_physical_attrs 100 100  400  200       0     0     0>
-            , <&key_physical_attrs 100 100  500  200       0     0     0>
-            , <&key_physical_attrs 100 100  600  200       0     0     0>
-            , <&key_physical_attrs 100 100  700  200       0     0     0>
+        transform = <&matrix_transform0>;
+        keys  //                    w    h    x    y    rot  rx  ry
+            = <&key_physical_attrs 100  100  400    0     0   0   0>
+            , <&key_physical_attrs 100  100  500    0     0   0   0>
+            , <&key_physical_attrs 100  100  600    0     0   0   0>
+            , <&key_physical_attrs 100  100  400  100     0   0   0>
+            , <&key_physical_attrs 100  100  500  100     0   0   0>
+            , <&key_physical_attrs 100  100  600  100     0   0   0>
+            , <&key_physical_attrs 100  100  700  100     0   0   0>
+            , <&key_physical_attrs 100  100  400  200     0   0   0>
+            , <&key_physical_attrs 100  100  500  200     0   0   0>
+            , <&key_physical_attrs 100  100  600  200     0   0   0>
+            , <&key_physical_attrs 100  100  700  200     0   0   0>
             ;
+    };
+
+    matrix_transform0: matrix_transform {
+        compatible = "zmk,matrix-transform";
+        map = < 0  1  2
+                3  4  5  6
+                7  8  9 10 >;
+        rows = <3>;
+        cols = <4>;
     };
 };
