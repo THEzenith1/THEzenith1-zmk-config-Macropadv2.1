@@ -4,7 +4,7 @@
     macropad_physical_layout: macropad_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Macro Pad";
-        transform = <&default_transform>;
+        transform = <&matrix_transform0>;
         keys  //                    w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100  400    0       0     0     0>
             , <&key_physical_attrs 100 100  500    0       0     0     0>
