@@ -2,5 +2,5 @@ if SHIELD_MACROPADV21
 
 config ZMK_KEYBOARD_NAME
     default "MacropadV21"
-ZMK_STUDIO=y
+
 endif
