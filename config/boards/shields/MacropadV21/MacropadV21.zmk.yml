@@ -1,0 +1,7 @@
+file_format: "1"
+id: macropadv21
+name: MacropadV2
+type: shield
+url: https://github.com/THEzenith1/THEzenith1-zmk-config-Macropadv2.1
+features: 
+  - studio
