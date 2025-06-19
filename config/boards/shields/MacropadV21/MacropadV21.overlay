@@ -1,3 +1,4 @@
+#include <physical_layouts.dtsi>
 / {
     chosen {
         zmk,kscan = &defualt_kscan;
@@ -7,6 +8,8 @@
         compatible = "zmk,kscan-gpio-direct";
         label = "defualt_kscan";
         wakeup-source;
+        display-name = "Macropad V2";
+
 
         input-gpios =
         <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
@@ -19,7 +22,22 @@
         <&xiao_d 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
         <&xiao_d 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
         <&xiao_d 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-        <&xiao_d 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        <&xiao_d 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        ;
+
+        keys  //                    w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100  400    0       0     0     0>
+            , <&key_physical_attrs 100 100  500    0       0     0     0>
+            , <&key_physical_attrs 100 100  600    0       0     0     0>
+            , <&key_physical_attrs 100 100  400  100       0     0     0>
+            , <&key_physical_attrs 100 100  500  100       0     0     0>
+            , <&key_physical_attrs 100 100  600  100       0     0     0>
+            , <&key_physical_attrs 100 100  700  100       0     0     0>
+            , <&key_physical_attrs 100 100  400  200       0     0     0>
+            , <&key_physical_attrs 100 100  500  200       0     0     0>
+            , <&key_physical_attrs 100 100  600  200       0     0     0>
+            , <&key_physical_attrs 100 100  700  200       0     0     0>
+            ;
 
     };
 
