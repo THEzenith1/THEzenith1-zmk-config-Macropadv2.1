@@ -17,9 +17,9 @@
                 &studio_unlock 
                 &studio_unlock 
                 &studio_unlock  
-                &A   
-                &C_PP   
-                &C_NEXT   
+                &studio_unlock    
+                &studio_unlock    
+                &studio_unlock    
 
             >;
         };
