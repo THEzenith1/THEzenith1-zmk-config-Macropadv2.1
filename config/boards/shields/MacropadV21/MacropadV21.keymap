@@ -1,7 +1,17 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_boot {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&bootloader>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -16,9 +26,9 @@
                 &studio_unlock   // key 5 (GPIO0 pin 3)
                 &studio_unlock   // key 6 (GPIO0 pin 4)
                 &studio_unlock   // key 7 (GPIO0 pin 5)
-                &studio_unlock    // key 8 (GPIO0 pin 2)
-                &studio_unlock   // key 9 (GPIO0 pin 3)
-                &studio_unlock    // key 9 (GPIO0 pin 3)
+                &C_PREVIOUS    // key 8 (GPIO0 pin 2)
+                &C_PP   // key 9 (GPIO0 pin 3)
+                &C_NEXT    // key 9 (GPIO0 pin 3)
 
             >;
         };
